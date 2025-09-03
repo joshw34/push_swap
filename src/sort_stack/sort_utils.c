@@ -21,6 +21,8 @@ void	smallest_to_top(t_node **stack)
 
 	temp = *stack;
 	smallest = INT_MAX;
+  top = false;
+  index = 0;
 	while (temp != NULL)
 	{
 		if (temp->nbr < smallest)
@@ -46,6 +48,8 @@ void	largest_to_top(t_node **stack)
 
 	temp = *stack;
 	largest = INT_MIN;
+  top = false;
+  index = 0;
 	while (temp != NULL)
 	{
 		if (temp->nbr > largest)
